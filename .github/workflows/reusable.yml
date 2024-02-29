@@ -19,7 +19,7 @@ jobs:
       current-time: ${{ steps.time.outputs.now }}
     steps:
       - name: Greet someone
-        run: echo "Hello ${{ inputs.who-to-greet }} 
+        run: echo "Hello ${{ inputs.who-to-greet }}!"
       - name: Output time
         id: time
         run: echo "now=$(date)" >> $GITHUB_OUTPUT
